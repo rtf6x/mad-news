@@ -12,6 +12,14 @@
     "madness",
     "russia"
   ],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtf6x/mad-news.git"
+  },
+  "author": "Alex Vopilovskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtf6x/mad-news/issues"
+  },
+  "homepage": "https://github.com/rtf6x/mad-news"
 }

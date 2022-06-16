@@ -1,4 +1,4 @@
-# Mad-News
+# Mad-News [!(https://img.shields.io/npm/dm/mad-news.svg)](https://www.npmjs.com/package/mad-news) [![NPM version](https://img.shields.io/npm/v/mad-news.svg)](https://www.npmjs.com/package/mad-news)
 
 Dramatic news generator
 

@@ -20,6 +20,10 @@ Dramatic news generator
 
 ### Node.js (or modern frontend):
 
+```shell
+  npm install mad-news
+```
+
 ```js
   var MadNews = require('mad-news');
   var Madness = new MadNews();

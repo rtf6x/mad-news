@@ -1,0 +1,17 @@
+{
+  "name": "mad-news",
+  "version": "2.0.0",
+  "description": "Dramatic news generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mad",
+    "news",
+    "madness",
+    "russia"
+  ],
+  "author": "",
+  "license": "ISC"
+}

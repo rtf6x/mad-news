@@ -1,19 +1,8 @@
-declare type Predict = {
-    sex: string;
-    message: string;
-};
-declare type Predicts = Predict[];
-interface Actions {
-    [index: string]: string[];
-}
-interface Conclusions {
-    [index: string]: string[];
-}
 declare class MadNews {
-    dictionary: any;
-    predicts: Predicts;
-    actions: Actions;
-    conclusions: Conclusions;
+    private dictionary;
+    private predicts;
+    private actions;
+    private conclusions;
     sex: string;
     person: string;
     action: string;
@@ -21,9 +10,9 @@ declare class MadNews {
     fullString: string;
     constructor(language?: string);
     generate(): void;
-    getPerson(): string;
-    getAction(): string;
-    getConclusion(): string;
+    private getPerson;
+    private getAction;
+    private getConclusion;
     private static spliceRandom;
     private replaceSets;
 }

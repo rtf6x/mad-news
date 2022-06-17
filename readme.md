@@ -6,7 +6,7 @@ Dramatic news generator
 
 ### HTML:
 ```html
-  <script type="text/javascript" src="https://unpkg.com/mad-news/index.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/mad-news/lib/index.js"></script>
 ```
 
 ```js
@@ -33,6 +33,9 @@ Dramatic news generator
   console.log(Madness.conclusion);
   // or
   console.log(Madness.fullString);
+  
+  // Generate new Madness:
+  madness.generate();
 ```
 
 ```typescript
@@ -44,4 +47,7 @@ Dramatic news generator
   console.log(Madness.conclusion);
   // or
   console.log(Madness.fullString);
+  
+  // Generate new Madness:
+  madness.generate();
 ```

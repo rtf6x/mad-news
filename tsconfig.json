@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es5",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/tests/*"]
+}

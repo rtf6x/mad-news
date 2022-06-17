@@ -1,0 +1,31 @@
+import MadNews from '../src/index';
+
+test('Madness', () => {
+  const madness = new MadNews('ru');
+  const madString = madness.fullString;
+  expect(madness.fullString).toBeDefined();
+  madness.generate();
+  expect(madness.fullString === madString).toBeFalsy();
+  console.log('Old madness:', madString);
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+  madness.generate();
+  console.log('New madness:', madness.fullString);
+});

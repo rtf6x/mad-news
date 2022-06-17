@@ -9,8 +9,11 @@ const config = {
   output: {
     path: path.resolve(__dirname, "./lib"),
     filename: "index.js",
-    library: "MadNews",
-    libraryTarget: "umd",
+    library: {
+      name: "MadNews",
+      type: "umd",  // see https://webpack.js.org/configuration/output/#outputlibrarytype
+      export: "default",  // see https://github.com/webpack/webpack/issues/8480
+    },
     globalObject: "this",
     umdNamedDefine: true,
   },

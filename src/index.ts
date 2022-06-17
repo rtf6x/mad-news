@@ -85,7 +85,7 @@ class MadNews {
     if (matches) {
       matches.forEach((key: string) => {
         key = key.substring(1).substring(0, key.length - 2);
-        const set: any = this.dictionary.sets.find((set: any) => set.key === key);
+        const set: any = this.dictionary.sets.find((s: any) => s.key === key);
         const replacements: string[] = (set || { replacements: [key] }).replacements;
         const variant = replacements[Math.floor(Math.random() * replacements.length)];
         content = content.replace('[' + key + ']', variant).trim();

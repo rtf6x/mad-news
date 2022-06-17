@@ -38,6 +38,8 @@ Dramatic news generator
   madness.generate();
 ```
 
+### Typescript (with ```"esModuleInterop": true```):
+
 ```typescript
   import MadNews from 'mad-news';
   const Madness = new MadNews();

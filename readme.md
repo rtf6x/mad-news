@@ -12,9 +12,9 @@ Dramatic news generator
 ```js
   document.addEventListener('DOMContentLoaded', function (event) {
       var madness = new MadNews();
-      document.querySelector('#stage_a0 p').innerText = madness.person;
-      document.querySelector('#stage_b0 p').innerText = madness.action;
-      document.querySelector('#stage_c0 p').innerText = madness.conclusion;
+      document.querySelector('.person').innerText = madness.person;
+      document.querySelector('.action').innerText = madness.action;
+      document.querySelector('.conclusion').innerText = madness.conclusion;
   });
 ```
 

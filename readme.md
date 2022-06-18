@@ -10,8 +10,11 @@ Dramatic news generator
 ```
 
 ```js
+  var navigatorLang = navigator.language || navigator.userLanguage || '';
+  var language = navigatorLang.toLowerCase().indexOf('ru') > -1 ? 'ru' : 'en';
+  
   document.addEventListener('DOMContentLoaded', function (event) {
-      var madness = new MadNews();
+      var madness = new MadNews(language);
       document.querySelector('.person').innerText = madness.person;
       document.querySelector('.action').innerText = madness.action;
       document.querySelector('.conclusion').innerText = madness.conclusion;
@@ -25,8 +28,11 @@ Dramatic news generator
 ```
 
 ```js
+  const navigatorLang = navigator.language || navigator.userLanguage || '';
+  const language = navigatorLang.toLowerCase().indexOf('ru') > -1 ? 'ru' : 'en';
+  
   const MadNews = require('mad-news');
-  const madness = new MadNews();
+  const madness = new MadNews(language);
   
   console.log(madness.person);
   console.log(madness.action);
@@ -42,7 +48,9 @@ Dramatic news generator
 
 ```typescript
   import MadNews from 'mad-news';
-  const madness = new MadNews();
+  
+  const language = 'en'; // currently there are only 'ru' and 'en' dictionaries
+  const madness = new MadNews(language);
   
   console.log(madness.person);
   console.log(madness.action);

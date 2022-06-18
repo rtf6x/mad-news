@@ -25,14 +25,14 @@ Dramatic news generator
 ```
 
 ```js
-  var MadNews = require('mad-news');
-  var Madness = new MadNews();
+  const MadNews = require('mad-news');
+  const madness = new MadNews();
   
-  console.log(Madness.person);
-  console.log(Madness.action);
-  console.log(Madness.conclusion);
+  console.log(madness.person);
+  console.log(madness.action);
+  console.log(madness.conclusion);
   // or
-  console.log(Madness.fullString);
+  console.log(madness.fullString);
   
   // Generate new Madness:
   madness.generate();
@@ -42,13 +42,13 @@ Dramatic news generator
 
 ```typescript
   import MadNews from 'mad-news';
-  const Madness = new MadNews();
+  const madness = new MadNews();
   
-  console.log(Madness.person);
-  console.log(Madness.action);
-  console.log(Madness.conclusion);
+  console.log(madness.person);
+  console.log(madness.action);
+  console.log(madness.conclusion);
   // or
-  console.log(Madness.fullString);
+  console.log(madness.fullString);
   
   // Generate new Madness:
   madness.generate();
